@@ -92,8 +92,15 @@ globalMethods.getUpvalues = function(closure)
     if type(closure) == "table" then
         return oldGetUpvalues(closure.Data)
     end
+    
+    if type(closure) == "function" then
+        if iscclosure and iscclosure(closure) then 
+            return {} 
+        end
+        return oldGetUpvalues(closure)
+    end
 
-    return oldGetUpvalues(closure)
+    return {}
 end
 
 environment.hasMethods = hasMethods
