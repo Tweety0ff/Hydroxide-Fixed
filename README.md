@@ -40,9 +40,6 @@ webImport("ui/main")
     * Log calls of closures
     * View general information of closures (location, protos, constants, etc.)
 
-More to come, soon.
-
-## Images/Videos
 <p align="center">
     <img src="https://i.gyazo.com/63afdd764cdca533af5ebca843217a7e.gif" />
 </p>
